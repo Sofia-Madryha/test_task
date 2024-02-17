@@ -1,8 +1,11 @@
 import { Container } from "../GlobalStyle";
 import {
+  BurgerButtton,
+  BurgerMenu,
   Button,
   HeaderStyled,
   Logo,
+  Mobile,
   NavItem,
   NavLink,
   Navigation,
@@ -11,13 +14,28 @@ import {
 
 export const Header = () => {
   return (
-    <Container>
-      <HeaderStyled>
+    <HeaderStyled>
+      {" "}
+      <Container>
         <Logo>
           <a href="#home">
-            <img src="../images/logo.svg" width={150} height={60} alt="logo" />
+            <svg width="101" height="40">
+              <use href="../images/icons.svg#logo"></use>
+            </svg>
           </a>
         </Logo>
+        {/* <Mobile>
+          <BurgerMenu>
+            <BurgerButtton type="button">
+              <svg width="25" height="22">
+                <use
+                  stroke="rgba(46, 47, 66, 1)"
+                  href="../images/icons.svg#burger-menu"
+                ></use>
+              </svg>
+            </BurgerButtton>
+          </BurgerMenu>
+        </Mobile> */}
         <Navigation>
           <NavigationList>
             <NavItem>
@@ -33,9 +51,9 @@ export const Header = () => {
               <NavLink href="#about">ABOUT</NavLink>
             </NavItem>
           </NavigationList>
-        </Navigation>
-        <Button type="button">Book</Button>
-      </HeaderStyled>
-    </Container>
+          <Button type="button">Book</Button>
+        </Navigation>{" "}
+      </Container>
+    </HeaderStyled>
   );
 };

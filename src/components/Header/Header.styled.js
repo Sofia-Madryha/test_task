@@ -1,20 +1,41 @@
-
 import styled from "styled-components";
 
 export const HeaderStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 80px;
+  height: 60px;
+`;
+export const Mobile = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (min-width: 1024px){
+    overflow: hidden;
+  }
+`;
+export const BurgerMenu = styled.div`
+  margin-left: auto;
+  // overflow: hidden;
+`;
+
+export const BurgerButtton = styled.button`
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
 `;
 
 export const Logo = styled.div`
   width: 100%;
-  margin-right: 202px;
 `;
 
 export const Navigation = styled.nav`
-  margin-right: 251px;
+  overflow: hidden;
+
+  @media only screen and (min-width: 1024px){
+    overflow: visible;
+    margin-right: 251px;
+  }
+  
 `;
 export const NavigationList = styled.ul`
   display: flex;
@@ -28,14 +49,14 @@ export const NavItem = styled.li`
 `;
 export const NavLink = styled.a`
   &:active,
-  &:hover{
-    &:after{
-        visibility: visible;
+  &:hover {
+    &:after {
+      visibility: visible;
     }
   }
-  
+
   &:after {
-    visibility:hidden;
+    visibility: hidden;
     content: "";
     position: absolute;
     bottom: -1px;
@@ -48,7 +69,9 @@ export const NavLink = styled.a`
 `;
 
 export const Button = styled.button`
-font-size:12px;
+position: relative;
+  overflow: hidden;
+  font-size: 12px;
   width: 100px;
   height: 40px;
   background-color: transparent;

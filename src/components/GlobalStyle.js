@@ -38,10 +38,26 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 export const Container = styled.div`
- 
-      max-width: 1440px;
-      padding-right: 120px;
-      padding-left: 120px;
-    
-  
+  min-width: 320px;
+  max-width: 360px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 420px) {
+    max-width: 420px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 40px 0 40px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding: 0 60px 0 60px;
+  }
+  @media only screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 0 120px 0 120px;
+  }
 `;
