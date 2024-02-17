@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: "Dancing Script", cursive,  "Josefin Sans", sans-serif, "Cinzel", serif;
+    font-family: "Cinzel", serif;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -34,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     a{
       text-decoration: none;
       color:  ${(p) => p.theme.colors.black};
+      cursor:pointer;
     }
 `;
 export const Container = styled.div`
