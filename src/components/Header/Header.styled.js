@@ -1,41 +1,66 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 60px;
+  padding: 10px 0 10px 0;
+
+  @media only screen and (min-width: 1024px) {
+  }
 `;
-export const Mobile = styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  @media only screen and (min-width: 1024px){
-    overflow: hidden;
+  align-items: center;
+  height: 40px;
+
+  @media only screen and (min-width: 420px) {
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: 60px;
+
+    position: relative;
   }
 `;
 export const BurgerMenu = styled.div`
+  overflow: visible;
   margin-left: auto;
-  // overflow: hidden;
+  @media only screen and (min-width: 1024px) {
+    display: none;
+    position: relative;
+  }
 `;
 
 export const BurgerButtton = styled.button`
+  padding: 0;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
 `;
 
 export const Logo = styled.div`
-  width: 100%;
+  height: 100%;
+
+`;
+
+export const LogoSvg = styled.svg`
+  width: 101px;
+  height: 40px;
+
+  @media only screen and (min-width: 1024px) {
+    width: 150px;
+    height: 60px;
+  }
 `;
 
 export const Navigation = styled.nav`
-  overflow: hidden;
+display: none;
 
-  @media only screen and (min-width: 1024px){
-    overflow: visible;
-    margin-right: 251px;
+  @media only screen and (min-width: 1024px) {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:79px;
   }
-  
 `;
 export const NavigationList = styled.ul`
   display: flex;
@@ -69,8 +94,8 @@ export const NavLink = styled.a`
 `;
 
 export const Button = styled.button`
-position: relative;
-  overflow: hidden;
+display: none;
+  position: relative;
   font-size: 12px;
   width: 100px;
   height: 40px;
@@ -82,5 +107,9 @@ position: relative;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     border: 1px solid ${(p) => p.theme.colors.black};
+  }
+
+  @media only screen and (min-width: 1024px) {
+    display: inline-block;
   }
 `;

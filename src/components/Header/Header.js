@@ -3,9 +3,10 @@ import {
   BurgerButtton,
   BurgerMenu,
   Button,
+  HeaderContainer,
   HeaderStyled,
   Logo,
-  Mobile,
+  LogoSvg,
   NavItem,
   NavLink,
   Navigation,
@@ -15,19 +16,18 @@ import {
 export const Header = () => {
   return (
     <HeaderStyled>
-      {" "}
       <Container>
-        <Logo>
-          <a href="#home">
-            <svg width="101" height="40">
-              <use href="../images/icons.svg#logo"></use>
-            </svg>
-          </a>
-        </Logo>
-        {/* <Mobile>
+        <HeaderContainer>
+          <Logo>
+            <LogoSvg>
+              <a href="#home">
+                <use href="../images/icons.svg#logo"></use>{" "}
+              </a>
+            </LogoSvg>
+          </Logo>
           <BurgerMenu>
             <BurgerButtton type="button">
-              <svg width="25" height="22">
+              <svg width="28" height="28">
                 <use
                   stroke="rgba(46, 47, 66, 1)"
                   href="../images/icons.svg#burger-menu"
@@ -35,24 +35,27 @@ export const Header = () => {
               </svg>
             </BurgerButtton>
           </BurgerMenu>
-        </Mobile> */}
-        <Navigation>
-          <NavigationList>
-            <NavItem>
-              <NavLink href="#home">HOME</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">OFFERING</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">EXPERIANCE</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#about">ABOUT</NavLink>
-            </NavItem>
-          </NavigationList>
-          <Button type="button">Book</Button>
-        </Navigation>{" "}
+          <Navigation>
+            <NavigationList>
+              <NavItem>
+                <NavLink href="#home">HOME</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">OFFERING</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">EXPERIANCE</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#about">ABOUT</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#contact">CONTACT</NavLink>
+              </NavItem>
+            </NavigationList>
+          </Navigation>{" "}
+          <Button type="button">Book</Button>{" "}
+        </HeaderContainer>
       </Container>
     </HeaderStyled>
   );

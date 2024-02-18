@@ -36,6 +36,11 @@ export const GlobalStyle = createGlobalStyle`
       color:  ${(p) => p.theme.colors.black};
       cursor:pointer;
     }
+//     br{
+//       @media screen and (max-width: 768){
+// display: none
+//       }
+//     }
 `;
 export const Container = styled.div`
   min-width: 320px;

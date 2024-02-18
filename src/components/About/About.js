@@ -1,12 +1,15 @@
 import { Container } from "../GlobalStyle";
 import {
+  AboutContainer,
   AboutStyled,
   Card1,
   Card2,
   Card3,
   Card4,
   Description,
+  Description4,
   Image,
+  Image1,
   Image3,
   List,
   Subtitle,
@@ -19,6 +22,7 @@ export const About = () => {
     <AboutStyled id="about">
       <Container>
         {" "}
+        <AboutContainer>
         <Title>
           <TitleText>About Us</TitleText>
           <Subtitle>
@@ -44,8 +48,8 @@ export const About = () => {
               loading="lazy"
             ></Image>
             <Description>
-              "From our initial conversation, I knew I had found a gem." "Ariel
-              is THE BEST, and her work is INCREDIBLE." I CREATE TIMELESS,
+              "From our initial conversation, I knew I had found a gem." <br/> "Ariel
+              is THE BEST, and her work is INCREDIBLE." <br/>I CREATE TIMELESS,
               PERSONAL, ELEGANT PHOTOGRAPHS YOU'LL TREASURE FOREVER.
             </Description>
           </Card1>
@@ -64,9 +68,9 @@ export const About = () => {
               loading="lazy"
             ></Image>
 
-            <Description>
-              "From our initial conversation, I knew I had found a gem." "Ariel
-              is THE BEST, and her work is INCREDIBLE." I CREATE TIMELESS,
+<Description>
+              "From our initial conversation, I knew I had found a gem." <br/> "Ariel
+              is THE BEST, and her work is INCREDIBLE." <br/>I CREATE TIMELESS,
               PERSONAL, ELEGANT PHOTOGRAPHS YOU'LL TREASURE FOREVER.
             </Description>
           </Card2>
@@ -86,17 +90,17 @@ export const About = () => {
               loading="lazy"
             ></Image3>
               <Description>
-              "From our initial conversation, I knew I had found a gem." "Ariel
-              is THE BEST, and her work is INCREDIBLE." I CREATE TIMELESS,
+              "From our initial conversation, I knew I had found a gem." <br/> "Ariel
+              is THE BEST, and her work is INCREDIBLE." <br/>I CREATE TIMELESS,
               PERSONAL, ELEGANT PHOTOGRAPHS YOU'LL TREASURE FOREVER.
             </Description>
           </Card3>
           <Card4>
-          <Description>
-              "From our initial conversation, I knew I had found a gem." "Ariel
-              is THE BEST, and her work is INCREDIBLE." I CREATE TIMELESS,
+          <Description4>
+              "From our initial conversation, I knew I had found a gem." <br/> "Ariel
+              is THE BEST, and her work is INCREDIBLE." <br/>I CREATE TIMELESS,
               PERSONAL, ELEGANT PHOTOGRAPHS YOU'LL TREASURE FOREVER.
-            </Description>
+            </Description4>
             <Image
               alt="photo"
               src="../images/about/img4-280.jpg"
@@ -112,6 +116,7 @@ export const About = () => {
             ></Image>
           </Card4>
         </List>
+        </AboutContainer>
       </Container>
     </AboutStyled>
   );

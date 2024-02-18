@@ -78,6 +78,7 @@ width: 100%;
     (min-resolution: 2dppx) {
     background-image: url("../images/home/home-2048.jpg");
     }
+   
   }
   @media only screen and (min-width: 1440px){
 
@@ -87,6 +88,7 @@ width: 100%;
     (min-resolution: 2dppx) {
     background-image: url("../images/home/home-2880.jpg");
     }
+
   }
   } 
 `;
