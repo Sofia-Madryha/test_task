@@ -9,7 +9,6 @@ import {
   Description,
   Description4,
   Image,
-  Image1,
   Image3,
   List,
   Subtitle,

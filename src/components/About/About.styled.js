@@ -248,8 +248,8 @@ export const Card4 = styled(Card)`
       position: absolute;
       z-index: 99;
       top: 175px;
-    rotate: 270deg;
-    left: -36px;
+      rotate: 270deg;
+      left: -36px;
       height: 30px;
       width: 134px;
       transform: skew(20deg);
@@ -260,6 +260,7 @@ export const Card4 = styled(Card)`
     order:4;
     margin-top: -610px;
     gap: 74px;
+    
     &:after {
       top: 930px;
       rotate: 315deg;
